@@ -1,0 +1,174 @@
+/*Tablet styles.*/
+@media screen and (max-width: 1024px) {
+  /***** General styles. *****/
+  /*Texts.*/
+  /*H1.*/
+  .home_h1{
+    font-size: 30px !important;
+  }
+
+  /*H2.*/
+  .home_h2{
+    font-size: 14px !important;
+  }
+  /***** End of the general styles. *****/
+  
+  /***** Header styles. *****/
+  /*Some of the tabs have a margin left.*/
+  .left_margin_tab{
+    margin-left: 40px;
+  }
+  /***** End of the header styles. *****/
+  
+  /***** Register section styles. *****/
+  .fit_full_screen{
+    min-height: 550px;
+  }
+  
+  .dot_column{
+    min-height: 550px;
+    margin-left: 10px;
+  }
+  
+  .dot_flex{
+    min-height: 550px; 
+  }
+  
+  .column_left{
+    display: block;
+    width: 100%;
+    max-width: 540px;
+    height: calc(50vh - 35px);
+    min-height: 275px;
+    margin: 0px auto 0px auto;
+  }
+  
+  .column_left_flex{
+    align-items: flex-end;
+    height: calc(50vh - 35px);
+    min-height: 275px;
+  }
+  
+  .column_left_content{
+    text-align: center;
+  }
+  
+  .logo_img{
+    width: 250px;
+    height: 140px;
+  }
+  
+  .column_right{
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: calc(50vh - 35px);
+    min-height: 275px;
+    margin: 0px auto 0px auto;
+    float: none;
+  }
+  
+  .column_right_flex{
+    align-items: flex-start;
+    height: calc(50vh - 35px);
+    min-height: 275px;
+  }
+  
+  .invitation_to_register_text{
+    margin-top: 20px;
+  }
+  /***** End of the register section styles. *****/
+  
+  /***** What is MOH section styles. *****/
+  #what_is_moh_section{
+    display: flex;
+    align-items: center;
+  }
+  
+  .what_is_moh_content{
+    margin-top: 0px;
+  }
+  
+  .what_is_moh_general_description{
+    max-width: 570px;
+  }
+  
+  .descriptions_container{
+    height: 125px;
+  }
+  
+  .description_div{
+    width: 225px;
+    height: 125px;
+    margin: 0px 10px 0px 10px;
+  }
+  
+  .img_description_container{
+    height: 125px;
+  }
+  
+  .description_image{
+    margin-top: 17.5px;
+  }
+  
+  .text_description_container{
+    height: 100px;
+    width: 150px;
+  }
+  /***** End of the What is MOH section styles. *****/
+  
+  /***** Vision and Mision section styles. *****/
+  #mision_and_vision_section{
+    height: 380px;
+  }
+  
+  .mision_div{
+    max-width: 570px;
+    height: 190px;
+    left: 50px;
+  }
+  
+  .mision_flex{
+    height: 190px;
+  }
+  
+  .vision_div{
+    max-width: 570px;
+    height: 190px;
+    right: 50px;
+  }
+  
+  .vision_flex{
+    height: 190px;
+  }
+  /***** End of the Vision and Mision section styles. *****/
+  
+  /***** Team section styles. *****/
+  #team_slider{
+    max-width: 735px;
+  }
+  
+  .description_carousel{
+    max-width: 225px;
+  }
+  /***** End of the Team section styles. *****/
+}
+
+/***** Reviews section styles. *****/
+@media screen and (max-width: 900px) {
+  .review_left_side{
+    width: 42.5%;
+  }
+  
+  .review_right_side{
+    width: 57.5%;
+  }
+}
+/***** End of the reviews section styles. *****/
+
+/***** Footer section styles. *****/
+.home_footer_bottom_content{
+  width: 94.1406%;
+  max-width: 964px;
+}
+/***** End of the footer section styles. *****/
