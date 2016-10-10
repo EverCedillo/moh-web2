@@ -1,11 +1,12 @@
 /*Phone styles.*/
 @media only screen and (max-width: 750px) {
+  /***** General styles. *****/
+  /*Fit the space left by the header.*/
   .view_content{
     height: calc(100vh - 50px);
     margin-top: 50px;
   }
   
-  /***** General styles. *****/
   /*H1.*/
   .home_h1{
     font-size: 24px !important;
@@ -41,7 +42,7 @@
   /***** Register section styles. *****/
   .fit_full_screen{
     height: calc(100vh - 50px);
-    min-height: 400px;
+    min-height: 450px;
   }
   
   .dot_column{
@@ -56,14 +57,14 @@
   .column_left{
     max-width: 240px;
     height: calc(100vh - 50px);
-    min-height: 400px;
+    min-height: 450px;
   }
   
   .column_left_flex{
     max-width: 240px;
     align-items: center;
     height: calc(100vh - 50px);
-    min-height: 400px;
+    min-height: 450px;
   }
   
   .column_right{

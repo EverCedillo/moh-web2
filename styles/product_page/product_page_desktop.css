@@ -1,0 +1,444 @@
+/*Desktop styles..*/
+/***** General styles. *****/
+/*Fit the space left by the header.*/
+.view_content{
+  width: 100%;
+  height: calc(100vh - 70px);
+  margin-top: 70px;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/*White texts.*/
+.white_text{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #FFFFFF;
+}
+
+/*Gray texts.*/
+.gray_text{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #999999;
+}
+
+/*Texts.*/
+/*H1.*/
+.home_h1{
+  font-size: 40px !important;
+  font-weight: 700;
+}
+
+/*H2.*/
+.home_h2{
+  font-size: 16px !important;
+  font-weight: 400;
+}
+
+/*H3.*/
+.home_h3{
+  font-size: 14px !important;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+/*H4.*/
+.home_h4{
+  font-size: 10px !important;
+  font-weight: 400;
+}
+/***** End of the general styles. *****/
+
+/***** Header styles. *****/
+/*Header.*/
+.header_with_icon{
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: #93268E;
+  top: 0;
+  z-index: 99;
+}
+
+/*Content of the head.*/
+.header_content{
+  display: inline-block;
+  height: 70px;
+}
+
+.header_logo{
+  width: 55px;
+  height: 55px;
+  margin-top: 7.5px;
+}
+/***** End of the header styles. *****/
+
+/***** Presentation styles. *****/
+/*To fit the full screen less the header.*/
+.fit_full_screen{
+  width: 100%;
+  height: calc(100vh - 70px);
+  min-height: 250px;
+  overflow: hidden;
+}
+
+.principal_column{
+  display: inline-block;
+  height: calc(100vh - 70px);
+  margin-left: 90px;
+  min-height: 250px;
+}
+
+.principal_column_flex{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 70px);
+  min-height: 250px;
+}
+
+.principal_column_content{
+  width: 100%;
+  min-height: 230px;
+}
+
+.logo_img{
+  width: 250px;
+  height: 140px;
+}
+
+.slogan_text{
+  margin: 5px auto 0px auto;
+  line-height: 1;
+}
+
+.introduction_text{
+  margin: 5px auto 0px auto;
+  line-height: 20px;
+}
+/***** End of the presntation styles. *****/
+
+/***** App section styles. *****/
+#app_section{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 280px;
+}
+
+.app_column{
+  display: inline-block;
+  height: 280px;
+}
+
+.app_section_flex{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 280px;
+}
+
+.app_section_content{
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.app_title{
+  margin: 0px;
+  line-height: 1;
+}
+
+.app_description{
+  margin: 10px auto 0px auto;
+  line-height: 18px;
+}
+/***** End of the app section styles. *****/
+
+/***** Characteristics section styles. *****/
+#characteristics_section{
+  width: 100%;
+  height: 440px;
+}
+
+.characteristic1{
+  position: absolute;
+  width: 100%;
+  max-width: 600px;
+  height: 220px;
+  top: 0px;
+  left: 90px;
+}
+
+.characteristic1_flex{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 220px;
+}
+
+.characteristic1_content{
+  width: 100%;
+  text-align: left;
+}
+
+.characteristic2{
+  position: absolute;
+  width: 100%;
+  max-width: 600px;
+  height: 220px;
+  bottom: 0px;
+  right: 90px;
+}
+
+.characteristic2_flex{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 220px;
+}
+
+.characteristic2_content{
+  width: 100%;
+  text-align: right;
+}
+/***** End of characteristics section styles. *****/
+
+/***** App explanation section styles. *****/
+.text_carousel_app{
+  margin: 20px 0px 0px 0px;
+  line-height: 18px;
+}
+
+.description_app_image{
+  width: 70px;
+  height: 70px;
+}
+
+#app_explanation_section{
+  width: 100%;
+  height: 594px;
+}
+
+.app_explanation_content{
+  position: relative;
+  width: 845px;
+  height: 594px;
+  margin: 0px auto 0px auto;
+}
+
+.phone_container{
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 349px;
+  height: 566px;
+  left: 0;
+  bottom: 0;
+  background-image: url('../../images/smarthphone.png');
+  background-repeat: no-repeat;
+}
+
+#app_views_container{
+  width: 320px;
+  height: 493px;
+  overflow: hidden;
+}
+
+#app_views_wrapper{
+  width: 960px;
+  height: 493px;
+  transform: translate3d(0, 0, 0);
+  transition: transform .5s ease-in-out;
+}
+
+.app_view{
+  float: left;
+  width: 320px;
+  height: 493px;
+  white-space: normal;
+  background-repeat: no-repeat;
+}
+
+#view_one{
+  background-image: url('../../images/Screen1.jpg');
+  background-repeat: no-repeat;
+}
+
+#view_two{
+  background-image: url('../../images/Screen1.jpg');
+  background-repeat: no-repeat;
+}
+
+#view_three{
+  background-image: url('../../images/Screen1.jpg');
+  background-repeat: no-repeat;
+}
+
+.description_content{
+  position: absolute;
+  width: 285px;
+  height: 210px;
+  top: 192px;
+  right: 0;
+}
+
+#description_app_view_container{
+  width: 285px;
+  height: 210px;
+  overflow: hidden;
+}
+
+#description_app_view_wrapper{
+  width: 855px;
+  height: 210px;
+  transform: translate3d(0, 0, 0);
+  transition: transform .5s ease-in-out;
+}
+
+.app_view_description{
+  float: left;
+  width: 285px;
+  height: 210px;
+  white-space: normal;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+#view_description_one{
+}
+
+#view_description_two{
+}
+
+#view_description_three{
+}
+
+#navLinks{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+}
+
+#navLinks ul{
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+#navLinks ul li {
+  float: left;
+  text-align: center;
+  margin: 10px;
+  list-style: none;
+  cursor: pointer;
+  background-color: #CCCCCC;
+  padding: 5px;
+  border-radius: 50%;
+  border: black 5px solid;
+}
+
+#navLinks ul li:hover {
+  background-color: #FFFF00;
+}
+
+#navLinks ul li.active {
+  background-color: #333333;
+  color: #FFFFFF;
+  outline-width: 7px;
+}
+
+#navLinks ul li.active:hover {
+  background-color: #484848;
+  color: #FFFFFF;
+}
+
+#navLinks ul li.active {
+  background-color: #333333;
+  color: #FFFFFF;
+  outline-width: 7px;
+}
+#navLinks ul li.active:hover {
+  background-color: #484848;
+  color: #FFFFFF;
+}
+
+.app_explanation_content_t{
+  display: none;
+}
+
+.app_explanation_content_m{
+  display: none;
+}
+/***** End of the app explanation section styles. *****/
+
+/***** Footer section styles. *****/
+.product_footer{
+  width: 100%;
+  height: 160px;
+  background-color: #757575;
+}
+
+.product_footer_top{
+  width: 100%;
+  height: 90px;
+}
+
+.product_footer_top_content{
+  width: 160px;
+  height: 90px;
+  margin: 0px auto 0px auto;
+}
+
+.facebook_logo{
+  float: left;
+  margin: 20px auto 0px 15px;
+}
+
+.googleplus_logo{
+  float: right;
+  margin: 20px 15px 0px auto;
+}
+
+.product_footer_bottom{
+  width: 100%;
+  height: 70px;
+}
+
+.product_footer_bottom_content{
+  position: relative;
+  width: 95.1683%;
+  max-width: 1300px;
+  height: 70px;
+  margin: 0px auto 0px auto;
+  border-top: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.rights_reserved_text{
+  position: absolute;
+  margin: 0px;
+  left: 0px;
+  top: 20px;
+}
+
+.contact_mail{
+  position: absolute;
+  margin: 0px;
+  right: 0px;
+  top: 20px;
+}
+
+.moh_logo_footer{
+  display: block;
+  width: 70px;
+  height: 40px;
+  margin: 20px auto 0px auto;
+}
+/***** End of the footer section styles. *****/

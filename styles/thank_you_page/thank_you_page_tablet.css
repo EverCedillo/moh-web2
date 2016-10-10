@@ -1,0 +1,22 @@
+/*Tablet styles.*/
+@media screen and (max-width: 1024px) {
+  /***** General styles. *****/
+  /*Texts.*/
+  /*H1.*/
+  .home_h1{
+    font-size: 30px !important;
+  }
+
+  /*H2.*/
+  .home_h2{
+    font-size: 14px !important;
+  }
+  /***** End of the general styles. *****/
+  
+  /***** Footer section styles. *****/
+  .thank_you_footer_bottom_content{
+    width: 94.1406%;
+    max-width: 964px;
+  }
+  /***** End of the footer section styles. *****/
+}

@@ -17,92 +17,13 @@
     <link rel="stylesheet" rel="stylesheet" href="../libraries/slick-1.6.0/slick/slick.css"/>
     <link rel="stylesheet" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>
     <!-- Own styles. -->
+    <link type="text/css" rel="stylesheet" href="../styles/home_page/home_page_modal.css"/>
     <!-- File with the general styles (desktop size styles). -->
     <link type="text/css" rel="stylesheet" href="../styles/home_page/home_page_desktop.css"/>
+    <!-- Overwrite styles to made them fit in tablet screen sizes (<=1024px). -->
     <link type="text/css" rel="stylesheet" href="../styles/home_page/home_page_tablet.css"/>
+    <!-- Overwrite styles to made them fit in phone screen sizes (<=750px). -->
     <link type="text/css" rel="stylesheet" href="../styles/home_page/home_page_phone.css"/>
-    <!-- Modal. -->
-    <style>
-    /* The Modal (background) */
-    .modal{
-      display: none; /* Hidden by default */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Sit on top */
-      left: 0;
-      top: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height */
-      overflow: auto; /* Enable scroll if needed */
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-      -webkit-animation-name: fadeIn; /* Fade in the background */
-      -webkit-animation-duration: 0.4s;
-      animation-name: fadeIn;
-      animation-duration: 0.4s
-    }
-
-    /* Modal Content */
-    .modal-content{
-      position: fixed;
-      bottom: 0;
-      background-color: #fefefe;
-      width: 100%;
-      -webkit-animation-name: slideIn;
-      -webkit-animation-duration: 0.4s;
-      animation-name: slideIn;
-      animation-duration: 0.4s
-    }
-
-    /* The Close Button */
-    .close{
-      color: white;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus{
-      color: #000;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .modal-header{
-      padding: 2px 16px;
-      background-color: #5cb85c;
-      color: white;
-    }
-
-    .modal-body{padding: 2px 16px;}
-
-    .modal-footer{
-      padding: 2px 16px;
-      background-color: #5cb85c;
-      color: white;
-    }
-
-    /* Add Animation */
-    @-webkit-keyframes slideIn {
-      from {bottom: -300px; opacity: 0} 
-      to {bottom: 0; opacity: 1}
-    }
-
-    @keyframes slideIn{
-      from {bottom: -300px; opacity: 0}
-      to {bottom: 0; opacity: 1}
-    }
-
-    @-webkit-keyframes fadeIn{
-      from {opacity: 0} 
-      to {opacity: 1}
-    }
-
-    @keyframes fadeIn{
-      from {opacity: 0} 
-      to {opacity: 1}
-    }
-    </style>
   </head>
   <body>
     <!-- The Modal -->
@@ -114,8 +35,8 @@
         <!-- Invitation to register. -->
         <p class="home_h2 gray_text invitation_to_register_text">Registrate y mantente actualizado sobre<br>las noticias de Ohana Home</p>
         <!-- To adjust the inputs and the button of register. -->
-        <div class="modal_content_container" style="width: 95%; max-width: 280px; margin: 10px auto 20px; auto;">
-          <!-- Names input. -->
+        <div class="modal_content_container">
+          <!-- Names input. The structure of this inputs is given by Floatl: https://richardvenneman.github.io/floatl/example/ -->
           <div class="input_register">
             <div class="floatl">
               <label for="register_name_mobile" class="floatl__label">Nombre(s)</label>
@@ -136,7 +57,7 @@
               <input name="register_mail_mobile" class="floatl__input" placeholder="Correo" type="text"/>
             </div>
           </div>
-          <!-- Button to summit the register. -->
+          <!-- Button to submit the register. -->
           <button class="register_button home_h3 white_text">Registrarse</button>
         </div>
       </div>
@@ -184,11 +105,15 @@
         </div>
       </div>
     </div>
+    <!-- The content, this fits the rest of the page leaved by the header. -->
     <div class="view_content">
+      <!-- First part of the Home page, the part where the register is. This section fits the full screen. -->
       <div class="fit_full_screen" id="register_section">
+        <!-- Column in the left, here are the dots. -->
         <div class="dot_column">
           <div class="dot_flex">
             <div class="dot_content">
+              <!-- The dots. -->
               <div class="dot_div"></div>
               <div class="dot_div dot_margin_top"></div>
               <div class="dot_div dot_margin_top"></div>
@@ -196,105 +121,159 @@
             </div>
           </div>
         </div>
+        <!-- Left column of the register section. -->
         <div class="column_left">
           <div class="column_left_flex">
             <div class="column_left_content">
+              <!-- Logo 'Ohana home'. -->
               <img class="logo_img" src="../images/MOH_logo.png"/>
+              <!-- Slogan. -->
               <p class="home_h1 white_text">"Complementamos tu hogar"</p>
+              <!-- Introduction text. -->
               <p class="home_h2 white_text introduction_text">Introducción introducción introducción introducción introducción introducción introducción<br>Introducción introducción introducción introducción introducción introducción.</p>
+              <!-- In phone screen sizes appears a button to register, this opens the modal to register. -->
               <button class="register_button home_h3 white_text" id="mobile_register_button">Registrarse</button>
             </div>
           </div>
         </div>
+        <!-- Right column of the register section. -->
         <div class="column_right">
           <div class="column_right_flex">
             <div class="column_right_content">
+              <!-- Invitation to register. -->
               <p class="home_h2 white_text invitation_to_register_text">Registrate y mantente actualizado sobre<br>las noticias de Ohana Home</p>
+              <!-- Names input. -->
               <div class="input_register">
                 <div class="floatl">
                   <label for="register_name" class="floatl__label">Nombre(s)</label>
                   <input name="register_name" class="floatl__input" placeholder="Nombre(s)" type="text" />
                 </div>
               </div>
+              <!-- Last names input. -->
               <div class="input_register">
                 <div class="floatl">
                   <label for="register_last_names" class="floatl__label">Apellidos</label>
                   <input name="register_last_names" class="floatl__input" placeholder="Apellidos" type="text" />
                 </div>
               </div>
+              <!-- Mail input. -->
               <div class="input_register">
                 <div class="floatl">
                   <label for="register_mail" class="floatl__label">Correo</label>
                   <input name="register_mail" class="floatl__input" placeholder="Correo" type="text" />
                 </div>
               </div>
+              <!-- Button to submit register. -->
               <button class="register_button home_h3 white_text">Registrarse</button>
             </div>
           </div>
         </div>
       </div>
+      <!-- What is MOH section. -->
       <div id="what_is_moh_section">
+        <!-- Content of the section -->
         <div class="what_is_moh_content">
+          <!-- Title of the section -->
           <p class="home_h1 gray_text what_is_moh_title">Qué es MOH</p>
+          <!-- Explanation of Whats is MOH. -->
           <p class="home_h3 gray_text what_is_moh_general_description">My Ohana Home es una manera de automatizar tu hogar para ayudarte a completar las diferentes tareas que hacen que gastes tus tiempo. Siéntete cómodo de que todo dentro de tu hogar esta funcionando de manera óptima.</p>
+          <!-- Container of the descriptions.. -->
           <div class="descriptions_container">
+            <!-- The descriptions. -->
+            <!-- Containerof a description. -->
             <div class="description_div">
+              <!-- Left side of the description, where the image is located. -->
               <div class="img_description_container">
+                <!-- Image of the description. -->
                 <img class="description_image" src="../images/persons.png"/>
               </div>
+              <!-- Right side of the description, where the text is located. -->
               <div class="text_description_container">
+                <!-- Text of the description. -->
                 <p class="home_h3 gray_text">Descubre fácilmente información acerca de tu casa gracias a nuestro sistema de administración del hogar basado en Crowdsorcing.</p>
               </div>
             </div>
+            <!-- Containerof a description. -->
             <div class="description_div">
+              <!-- Left side of the description, where the image is located. -->
               <div class="img_description_container">
+                <!-- Image of the description. -->
                 <img class="description_image" src="../images/clock.png"/>
               </div>
+              <!-- Right side of the description, where the text is located. -->
               <div class="text_description_container">
+                <!-- Text of the description. -->
                 <p class="home_h3 gray_text">Descubre fácilmente información acerca de tu casa gracias a nuestro sistema de administración del hogar basado en Crowdsorcing.</p>
               </div>
             </div>
+            <!-- Containerof a description. -->
             <div class="description_div">
+              <!-- Left side of the description, where the image is located. -->
               <div class="img_description_container">
+                <!-- Image of the description. -->
                 <img class="description_image" src="../images/money.png"/>
               </div>
+              <!-- Right side of the description, where the text is located. -->
               <div class="text_description_container">
+                <!-- Text of the description. -->
                 <p class="home_h3 gray_text">Descubre fácilmente información acerca de tu casa gracias a nuestro sistema de administración del hogar basado en Crowdsorcing.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- Mision and vision section. -->
       <div id="mision_and_vision_section">
+        <!-- Left side of the section, the mision part. -->
         <div class="mision_div">
           <div class="mision_flex">
             <div class="mision_content">
+              <!-- Title of the part. -->
               <p class="home_h1 white_text">Misión</p>
+              <!-- Description of the part. -->
               <p class="home_h3 white_text">My Ohana Home es una manera de automatizar tu hogar para ayudarte a completar las diferentes tareas que hacen que gastes tus tiempo. Siéntete cómodo de que todo dentro de tu hogar esta funcionando de manera óptima.</p>
             </div>
           </div>
         </div>
+        <!-- Right side of the section, the vision part. -->
         <div class="vision_div">
           <div class="vision_flex">
             <div class="vision_content">
+              <!-- Title of the part. -->
               <p class="home_h1 white_text">Visión</p>
+              <!-- Description of the part. -->
               <p class="home_h3 white_text">My Ohana Home es una manera de automatizar tu hogar para ayudarte a completar las diferentes tareas que hacen que gastes tus tiempo. Siéntete cómodo de que todo dentro de tu hogar esta funcionando de manera óptima.</p>
             </div>
           </div>
         </div>
       </div>
-      <style type="text/css">
-        .slick-prev:before,
-        .slick-next:before {
-            color: #999999;
-        }
-      </style>
+      <!-- Team section. -->
       <div id="team_section">
+        <!-- Content of the section -->
         <div class="team_content">
+          <!-- Title of the section -->
           <p class="home_h1 gray_text team_title">Equipo</p>
+          <!-- Introduction text. -->
           <p class="home_h3 gray_text team_general_description">Descripción del equipo, descripción del equipo, descripción del equipo, descripción del equipo, descripción del equipo, descripción del equipo, descripción del equipo, descripción del equip</p>
+          <!-- Slider where are the members of the team. -->
           <div id="team_slider">
-            <div style="height: 100px;">
+            <!-- Carousel element. -->
+            <div class="carousel_element">
+              <!-- Content of the carousel element. -->
+              <div class="description_carousel">
+                <!-- Image container. -->
+                <div class="img_description_container">
+                  <!-- The image. -->
+                  <img class="description_image" src="../images/Oval%204.png"/>
+                </div>
+                <!-- Text container. -->
+                <div class="text_description_container">
+                  <!-- The text. -->
+                  <p class="home_h3 gray_text">Descubre fácilmente información acerca de tu casa gracias a nuestro sistema de administración del hogar basado en Crowdsorcing.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel_element">
               <div class="description_carousel">
                 <div class="img_description_container">
                   <img class="description_image" src="../images/Oval%204.png"/>
@@ -304,7 +283,7 @@
                 </div>
               </div>
             </div>
-            <div style="height: 100px;">
+            <div class="carousel_element">
               <div class="description_carousel">
                 <div class="img_description_container">
                   <img class="description_image" src="../images/Oval%204.png"/>
@@ -314,7 +293,7 @@
                 </div>
               </div>
             </div>
-            <div style="height: 100px;">
+            <div class="carousel_element">
               <div class="description_carousel">
                 <div class="img_description_container">
                   <img class="description_image" src="../images/Oval%204.png"/>
@@ -324,7 +303,7 @@
                 </div>
               </div>
             </div>
-            <div style="height: 100px;">
+            <div class="carousel_element">
               <div class="description_carousel">
                 <div class="img_description_container">
                   <img class="description_image" src="../images/Oval%204.png"/>
@@ -334,7 +313,7 @@
                 </div>
               </div>
             </div>
-            <div style="height: 100px;">
+            <div class="carousel_element">
               <div class="description_carousel">
                 <div class="img_description_container">
                   <img class="description_image" src="../images/Oval%204.png"/>
@@ -344,17 +323,7 @@
                 </div>
               </div>
             </div>
-            <div style="height: 100px;">
-              <div class="description_carousel">
-                <div class="img_description_container">
-                  <img class="description_image" src="../images/Oval%204.png"/>
-                </div>
-                <div class="text_description_container">
-                  <p class="home_h3 gray_text">Descubre fácilmente información acerca de tu casa gracias a nuestro sistema de administración del hogar basado en Crowdsorcing.</p>
-                </div>
-              </div>
-            </div>
-            <div style="height: 100px;">
+            <div class="carousel_element">
               <div class="description_carousel">
                 <div class="img_description_container">
                   <img class="description_image" src="../images/Oval%204.png"/>
@@ -439,12 +408,37 @@
           </div>
         </div>
       </div>
+      <!-- Reviews section. -->
       <div id="reviews_section">
+        <!-- Left side of the reviews section. -->
         <div class="review_left_side" id="review_left_side_id">
         </div>
+        <!-- Right side of the reviews section. -->
         <div class="review_right_side">
           <div class="review_right_side_content">
+            <!-- Reviews carousel. -->
             <div id="reviews_carousel">
+              <!-- Carousel element. -->
+              <div class="reviews_carousel_container">
+                <!-- Content of the carousel element. -->
+                <div class="reviews_carousel_content">
+                  <!-- Open quotation marks. -->
+                  <img src="../images/comillas1.png" class="open_quotation_marks"/>
+                  <!-- The review container. -->
+                  <div class="reviews_carousel_flex">
+                    <div>
+                      <!-- The review. -->
+                      <p class="home_h3 white_text review_margin">Yo actualmente estudio una maestría y siempre me falta tiempo para todo lo que tengo que hacer en el día, desde que uso el sistema de automatización My Ohana Home, tengo mas tiempo para preocuparme por mis estudios en lugar de estresarme por las cosas de mi casa.</p>
+                      <!-- Date of the review. -->
+                      <p class="home_h3 white_text review_date_margin">25/04/2016</p>
+                    </div>
+                  </div>
+                  <!-- Owner of the review. -->
+                  <p class="home_h3 white_text review_witness">Pamela Romero</p>
+                  <!-- Close quotation marks. -->
+                  <img src="../images/comillas2.png" class="close_quotation_marks"/>
+                </div>
+              </div>
               <div class="reviews_carousel_container">
                 <div class="reviews_carousel_content">
                   <img src="../images/comillas1.png" class="open_quotation_marks"/>
@@ -459,7 +453,7 @@
                 </div>
               </div>
               <div class="reviews_carousel_container">
-                <div class="reviews_carousel_content" style="">
+                <div class="reviews_carousel_content">
                   <img src="../images/comillas1.png" class="open_quotation_marks"/>
                   <div class="reviews_carousel_flex">
                     <div>
@@ -472,7 +466,7 @@
                 </div>
               </div>
               <div class="reviews_carousel_container">
-                <div class="reviews_carousel_content" style="">
+                <div class="reviews_carousel_content">
                   <img src="../images/comillas1.png" class="open_quotation_marks"/>
                   <div class="reviews_carousel_flex">
                     <div>
@@ -485,20 +479,7 @@
                 </div>
               </div>
               <div class="reviews_carousel_container">
-                <div class="reviews_carousel_content" style="">
-                  <img src="../images/comillas1.png" class="open_quotation_marks"/>
-                  <div class="reviews_carousel_flex">
-                    <div>
-                      <p class="home_h3 white_text review_margin">Yo actualmente estudio una maestría y siempre me falta tiempo para todo lo que tengo que hacer en el día, desde que uso el sistema de automatización My Ohana Home, tengo mas tiempo para preocuparme por mis estudios en lugar de estresarme por las cosas de mi casa.</p>
-                      <p class="home_h3 white_text review_date_margin">25/04/2016</p>
-                    </div>
-                  </div>
-                  <p class="home_h3 white_text review_witness">Pamela Romero</p>
-                  <img src="../images/comillas2.png" class="close_quotation_marks"/>
-                </div>
-              </div>
-              <div class="reviews_carousel_container">
-                <div class="reviews_carousel_content" style="">
+                <div class="reviews_carousel_content">
                   <img src="../images/comillas1.png" class="open_quotation_marks"/>
                   <div class="reviews_carousel_flex">
                     <div>
@@ -514,22 +495,32 @@
           </div>
         </div>
       </div>
+      <!-- Footer. -->
       <div class="home_footer">
-      <div class="home_footer_top">
-        <div class="home_footer_top_content">
-          <img src="../images/facebook.png" class="facebook_logo">
-          <img src="../images/googleplus.png" class="googleplus_logo">
+        <!-- Top of the footer. -->
+        <div class="home_footer_top">
+          <!-- Social networks logos container. -->
+          <div class="home_footer_top_content">
+            <!-- Facebook logo. -->
+            <img src="../images/facebook.png" class="facebook_logo">
+            <!-- Google Plus logo. -->
+            <img src="../images/googleplus.png" class="googleplus_logo">
+          </div>
         </div>
-      </div>
-      <div class="home_footer_bottom">
-        <div class="home_footer_bottom_content">
-          <p class="home_h3 white_text rights_reserved_text">Todos los derechos reservados a Ohana Home</p>
-          <p class="home_h3 white_text contact_mail">contacto@ohanahome.mx</p>
-          <img class="moh_logo_footer" src="../images/MOH_logo_2.png"> 
+        <!-- Bottom of the footer. -->
+        <div class="home_footer_bottom">
+          <!-- Content of the bottom of the footer. -->
+          <div class="home_footer_bottom_content">
+            <!-- Rights reserved text. -->
+            <p class="home_h3 white_text rights_reserved_text">Todos los derechos reservados a Ohana Home</p>
+            <!-- Contact mail. -->
+            <p class="home_h3 white_text contact_mail">contacto@ohanahome.mx</p>
+            <!-- MOH footer logo. -->
+            <img class="moh_logo_footer" src="../images/MOH_logo_2.png"> 
+          </div>
         </div>
       </div>
     </div>
-      </div>
     <!-- Libraries scripts. -->
     <!-- JQuery -->
     <script src="../libraries/jquery/jquery-2.1.4.js"></script>
@@ -540,33 +531,7 @@
     <!-- Slick. -->
     <script src="../libraries/slick-1.6.0/slick/slick.js"></script>
     <!-- Own scripts. -->
-    <script src="../scripts/home_page_jquery.js"></script>
-    <script>
-    // Get the modal
-    var modal = document.getElementById('myModal');
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("mobile_register_button");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-    </script>
+    <script src="../scripts/home_page/home_page_jquery.js"></script>
+    <script src="../scripts/home_page/home_page_modal.js"></script>
   </body>
 </html>

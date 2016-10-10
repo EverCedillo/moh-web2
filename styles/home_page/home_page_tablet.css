@@ -152,6 +152,13 @@
     max-width: 225px;
   }
   /***** End of the Team section styles. *****/
+
+  /***** Footer section styles. *****/
+  .home_footer_bottom_content{
+    width: 94.1406%;
+    max-width: 964px;
+  }
+  /***** End of the footer section styles. *****/
 }
 
 /***** Reviews section styles. *****/
@@ -165,10 +172,3 @@
   }
 }
 /***** End of the reviews section styles. *****/
-
-/***** Footer section styles. *****/
-.home_footer_bottom_content{
-  width: 94.1406%;
-  max-width: 964px;
-}
-/***** End of the footer section styles. *****/

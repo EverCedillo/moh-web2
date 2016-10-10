@@ -1,3 +1,6 @@
+/*Desktop styles..*/
+/***** General styles. *****/
+/*Fit the space left by the header.*/
 .view_content{
   width: 100%;
   height: calc(100vh - 70px);
@@ -7,35 +10,7 @@
   overflow-y: auto;
 }
 
-.floatl__label{
-  padding: 0px;
-  margin: 0px;
-  top: 6px;
-  left: 6px;
-}
-
-.floatl--active .floatl__label{
-  top: 6px;
-}
-
-input.floatl__input{
-  height: 20px;
-  width: 95%;
-}
-
-.floatl__input{
-  font-size: 10px;
-  padding: 11px 0px 5px 6px;
-  border: none;
-}
-
-.floatl--active .floatl__input{
-  padding: 16px 0px 0px 6px;
-  width: 95%;
-}
-
-/*Desktop styles..*/
-/***** General styles. *****/
+/*Texts.*/
 /*White texts.*/
 .white_text{
   font-family: 'Source Sans Pro', sans-serif;
@@ -48,7 +23,6 @@ input.floatl__input{
   color: #999999;
 }
 
-/*Texts.*/
 /*H1.*/
 .home_h1{
   font-size: 40px !important;
@@ -131,6 +105,7 @@ input.floatl__input{
   z-index: 2;
 }
 
+/*Container of the mobile tabs that scrolls horizontally.*/
 .mobile_tabs_scroll{
   text-align: center;
   width: 100%;
@@ -139,6 +114,7 @@ input.floatl__input{
   overflow-y: hidden;
 }
 
+/*Container of the mobile tabs.*/
 .mobile_tabs_container{
   display: inline-block;
   min-width: 330px;
@@ -147,22 +123,26 @@ input.floatl__input{
   overflow: hidden;
 }
 
+/*Tabs.*/
 .mobile_tab{
   display: inline-block;
   height: 50px;
   cursor: pointer;
 }
 
+/*Some tabs have a left margin.*/
 .mobile_tab_margin_left{
   margin-left: 15px;
 }
 
+/*Margin of the texts of the tabs.*/
 .mobile_tab_text_margin{
   margin: 13px auto 0px auto;
 }
 /***** End of the header styles. *****/
 
 /***** Register section styles. *****/
+/*To fit the full screen less the header.*/
 .fit_full_screen{
   width: 100%;
   height: calc(100vh - 70px);
@@ -170,6 +150,7 @@ input.floatl__input{
   overflow: hidden;
 }
 
+/*Column where the dots are.*/
 .dot_column{
   display: inline-block;
   position: absolute;
@@ -179,6 +160,7 @@ input.floatl__input{
   margin-left: 40px;
 }
 
+/*Fits its father and center the child elements.*/
 .dot_flex{
   display: flex;
   align-items: center;
@@ -187,10 +169,12 @@ input.floatl__input{
   min-height: 300px;
 }
 
+/*Content of the dot column..*/
 .dot_content{
   width: 100%;
 }
 
+/*The dots are placed as background.*/
 .dot_div{
   display: block;
   width: 10px;
@@ -198,10 +182,12 @@ input.floatl__input{
   background-image: url('../../images/dot_white.png');
 }
 
+/*Some of the dots hace margin top.*/
 .dot_margin_top{
   margin-top: 10px;
 }
 
+/*Left column of the register section.*/
 .column_left{
   display: inline-block;
   height: calc(100vh - 70px);
@@ -209,6 +195,7 @@ input.floatl__input{
   margin-left: 90px;
 }
 
+/*Fits its father and center the child elements.*/
 .column_left_flex{
   display: flex;
   align-items: center;
@@ -217,19 +204,34 @@ input.floatl__input{
   width: 100%;
 }
 
+/*Content of the column.*/
 .column_left_content{
   width: 100%;
 }
 
-.column_left_content{
-  width: 100%;
-}
-
+/*Introduction text.*/
 .introduction_text{
   line-height: 1;
   margin: 0px;
 }
 
+/*Button to submit the register.*/
+.register_button{
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #19E3F2;
+  cursor: pointer;
+}
+
+/*Button to submit the register in phone screen sizes.*/
+#mobile_register_button{
+  display: none;
+}
+
+/*Right column of the register section.*/
 .column_right{
   display: inline-block;
   width: 100%;
@@ -240,6 +242,7 @@ input.floatl__input{
   margin-right: 90px;
 }
 
+/*Fits its father and center the child elements.*/
 .column_right_flex{
   display: flex;
   align-items: center;
@@ -248,16 +251,19 @@ input.floatl__input{
   width: 100%;
 }
 
+/*Content of the column.*/
 .column_right_content{
   width: 100%;
 }
 
+/*Text that invite to register.*/
 .invitation_to_register_text{
   text-align: center;
   line-height: 1;
   margin: 0px;
 }
 
+/*This aren't the inputs, this are divs that contains the inputs.*/
 .input_register{
   width: 100%;
   height: 40px;
@@ -270,20 +276,42 @@ input.floatl__input{
   background-color: #FFFFFF;
 }
 
-#mobile_register_button{
-  display: none;
+/*Overwrite the floatl styles.*/
+.floatl__label{
+  padding: 0px;
+  margin: 0px;
+  top: 6px;
+  left: 6px;
 }
 
-.register_button{
-  width: 100%;
-  height: 40px;
-  margin-top: 10px;
+.floatl--active .floatl__label{
+  top: 6px;
+}
+
+input.floatl__input{
+  height: 20px;
+  width: 95%;
+}
+
+.floatl__input{
+  font-size: 10px;
+  padding: 11px 0px 5px 6px;
   border: none;
-  border-radius: 5px;
-  background-color: #19E3F2;
-  cursor: pointer;
 }
 
+.floatl--active .floatl__input{
+  padding: 16px 0px 0px 6px;
+  width: 95%;
+}
+
+/*Container of the modal content.*/
+.modal_content_container{
+  width: 95%;
+  max-width: 280px;
+  margin: 10px auto 20px auto;
+}
+
+/*The columns are to big to fit before the tablet styles, with this we win some space.*/
 @media screen and (max-width: 1130px){
   .dot_column{
     margin-left: 15px;
@@ -432,6 +460,16 @@ input.floatl__input{
   margin: 70px auto 0px auto;
 }
 
+/*Overwrite the color of the arrows of the team carousel.*/
+#team_slider .slick-prev:before,
+#team_slider .slick-next:before{
+  color: #999999;
+}
+
+.carousel_element{
+  height: 100px;
+}
+
 .description_carousel{
   width: 270px;
   height: 100px;
@@ -440,6 +478,12 @@ input.floatl__input{
 
 #team_slider_phone{
   display: none;
+}
+
+/*Overwrite the color of the arrows of the phone team carousel.*/
+#team_slider_phone .slick-prev:before,
+#team_slider_phone .slick-next:before{
+  color: #999999;
 }
 
 @media screen and (max-width: 1200px){

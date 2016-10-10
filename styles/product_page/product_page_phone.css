@@ -1,0 +1,305 @@
+/*Phone styles.*/
+@media only screen and (max-width: 750px) {
+  .view_content{
+    height: calc(100vh - 50px);
+    margin-top: 50px;
+  }
+  
+  /***** General styles. *****/
+  /*H1.*/
+  .home_h1{
+    font-size: 24px !important;
+  }
+  
+  .home_h3{
+    margin-bottom: 0px;
+  }
+  /***** End of the general styles. *****/
+  
+  /***** Header styles. *****/
+  /*Header.*/
+  .header_with_icon{
+    height: 50px;
+  }
+  
+  .header_logo{
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+  }
+  /***** End of the header styles. *****/
+  
+  /***** Presentation styles. *****/
+  .fit_full_screen{
+    height: calc(100vh - 50px);
+    min-height: 320px;
+  }
+  
+  .principal_column{
+    height: calc(100vh - 50px);
+    min-height: 320px;
+  }
+  
+  .principal_column_flex{
+    height: calc(100vh - 50px);
+    min-height: 320px;
+  }
+  
+  .principal_column_content{
+    max-width: 240px;
+    min-height: 300px;
+  }
+  
+  .logo_img{
+    width: 120px;
+    height: 66px;
+  }
+  
+  .slogan_text{
+    margin: 20px auto 0px auto;
+  }
+  
+  .introduction_text{
+    margin: 15px auto 0px auto;
+  }
+  /***** End of the presntation styles. *****/
+  
+  /***** App section styles. *****/
+  .app_section_content{
+    max-width: 260px;
+  }
+  
+  .app_description{
+    margin: 10px auto 0px auto;
+  }
+  /***** End of the app section styles. *****/
+  
+  /***** Characteristics section styles. *****/
+  #characteristics_section{
+    height: 600px;
+    text-align: center;
+  }
+  
+  .characteristic1{
+    position: relative;
+    max-width: 320px;
+    height: 300px;
+    left: initial;
+    margin: 0px auto 0px auto;
+    display: block;
+  }
+  
+  .characteristic1_flex{
+    height: 300px;
+  }
+  
+  .characteristic2{
+    position: relative;
+    max-width: 320px;
+    height: 300px;
+    right: initial;
+    margin: 0px auto 0px auto;
+    display: block;
+  }
+  
+  .characteristic2_flex{
+    height: 300px;
+  }
+  /***** End of characteristics section styles. *****/
+  
+  /***** App explanation section styles. *****/
+  #app_explanation_section{
+    height: 525px;
+  }
+  
+  .app_explanation_content_t{
+    display: none;
+  }
+  
+  .app_explanation_content_m{
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    min-width: 180px;
+    height: 525px;
+    margin: 0px auto 0px auto;
+  }
+  
+  .phone_container_m{
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 164px;
+    height: 260px;
+    bottom: 0;
+    left: 78px;
+    background-image: url('../../images/smarthphone.png');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+  }
+  
+  #app_views_container_m{
+    width: 146px;
+    height: 223px;
+    overflow: hidden;
+  }
+  
+  #app_views_wrapper_m{
+    width: 438px;
+    height: 223px;
+    transform: translate3d(0, 0, 0);
+    transition: transform .5s ease-in-out;
+  }
+  
+  .app_view_m{
+    float: left;
+    width: 146px;
+    height: 223px;
+    white-space: normal;
+    background-repeat: no-repeat;
+  }
+  
+  #view_one_m{
+    background-image: url('../../images/Screen1.jpg');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+  }
+  
+  #view_two_m{
+    background-image: url('../../images/Screen1.jpg');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+  }
+  
+  #view_three_m{
+    background-image: url('../../images/Screen1.jpg');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+  }
+  
+  .description_content_m{
+    position: absolute;
+    width: 180px;
+    height: 178px;
+    top: 40px;
+    left: 78px;
+  }
+  
+  #description_app_view_container_m{
+    width: 180px;
+    height: 178px;
+    overflow: hidden;
+  }
+  
+  #description_app_view_wrapper_m{
+    width: 855px;
+    height: 178px;
+    transform: translate3d(0, 0, 0);
+    transition: transform .5s ease-in-out;
+  }
+  
+  .app_view_description_m{
+    float: left;
+    width: 180px;
+    height: 178px;
+    white-space: normal;
+    text-align: center;
+    background-repeat: no-repeat;
+  }
+  
+  #view_description_one_m{
+  }
+
+  #view_description_two_m{
+  }
+
+  #view_description_three_{
+  }
+  
+  #navLinks_m{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+  }
+
+  #navLinks_m ul{
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    margin-top: 6px;
+  }
+
+  #navLinks_m ul li {
+    float: left;
+    text-align: center;
+    margin: 10px;
+    list-style: none;
+    cursor: pointer;
+    background-color: #CCCCCC;
+    padding: 5px;
+    border-radius: 50%;
+    border: black 5px solid;
+  }
+
+  #navLinks_m ul li:hover {
+    background-color: #FFFF00;
+  }
+
+  #navLinks_m ul li.active {
+    background-color: #333333;
+    color: #FFFFFF;
+    outline-width: 7px;
+  }
+
+  #navLinks_m ul li.active:hover {
+    background-color: #484848;
+    color: #FFFFFF;
+  }
+
+  #navLinks_m ul li.active {
+    background-color: #333333;
+    color: #FFFFFF;
+    outline-width: 7px;
+  }
+  #navLinks_m ul li.active:hover {
+    background-color: #484848;
+    color: #FFFFFF;
+  }
+  /***** End of the app explanation section styles. *****/
+  
+  /***** Footer section styles. *****/
+  .product_footer{
+    width: 100%;
+    height: 225px;
+  }
+  
+  .product_footer_bottom{
+    height: 135px;
+  }
+  
+  .product_footer_bottom_content{
+    height: 135px;
+  }
+  
+  .rights_reserved_text{
+    display: block;
+    position: initial;
+    width: 281px;
+    margin: 20px auto 0px auto;
+  }
+  
+  .contact_mail{
+    display: block;
+    position: initial;
+    width: 281px;
+    margin: 0px auto 0px auto;
+  }
+  /***** End of the footer section styles. *****/
+}

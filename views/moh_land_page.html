@@ -11,8 +11,105 @@
     <!-- Libraries styles. -->
     <!-- Normalize. -->
     <link rel="stylesheet" rel="stylesheet" href="../libraries/normalize/normalize.css"/>
-    
+    <!-- Floatl. -->
+    <link rel="stylesheet" rel="stylesheet" href="../libraries/floatl-master/lib/css/floatl.css"/>
+    <!-- Own styles. -->
+    <link type="text/css" rel="stylesheet" href="../styles/land_page/land_page_desktop.css"/>
+    <link type="text/css" rel="stylesheet" href="../styles/land_page/land_page_tablet.css"/>
+    <link type="text/css" rel="stylesheet" href="../styles/land_page/land_page_phone.css"/>
   </head>
   <body>
+    <!-- Header of the Land Page. -->
+    <div class="header_with_icon">
+      <!-- Content of the header. -->
+      <div class="header_content">
+        <img class="header_logo" src="../images/ohana_icon.png"/>
+      </div>
+    </div>
+    <!-- The content, this fits the rest of the page leaved by the header. -->
+    <div class="view_content">
+      <!-- First part of the Home page, the part where the register is. This section fits the full screen. -->
+      <div class="fit_full_screen" id="register_section">
+        <!-- Left column of the register section. -->
+        <div class="column_left">
+          <div class="column_left_flex">
+            <div class="column_left_content">
+              <!-- Invitation to register. -->
+              <p class="home_h2 white_text invitation_to_register_text">Registrate y mantente actualizado sobre<br>las noticias de Ohana Home</p>
+              <!-- Names input. -->
+              <div class="input_register">
+                <div class="floatl">
+                  <label for="register_name" class="floatl__label">Nombre(s)</label>
+                  <input name="register_name" class="floatl__input" placeholder="Nombre(s)" type="text" />
+                </div>
+              </div>
+              <!-- Last names input. -->
+              <div class="input_register">
+                <div class="floatl">
+                  <label for="register_last_names" class="floatl__label">Apellidos</label>
+                  <input name="register_last_names" class="floatl__input" placeholder="Apellidos" type="text" />
+                </div>
+              </div>
+              <!-- Mail input. -->
+              <div class="input_register">
+                <div class="floatl">
+                  <label for="register_mail" class="floatl__label">Correo</label>
+                  <input name="register_mail" class="floatl__input" placeholder="Correo" type="text" />
+                </div>
+              </div>
+              <!-- Button to submit register. -->
+              <button class="register_button home_h3 white_text">Registrarse</button>
+            </div>              
+          </div>
+        </div>
+        <!-- Right column of the register section. -->
+        <div class="column_right">
+          <div class="column_right_flex">
+            <div class="column_right_content">
+              <!-- Logo 'Ohana home'. -->
+              <img class="logo_img" src="../images/MOH_logo.png"/>
+              <!-- Slogan. -->
+              <p class="home_h1 white_text">"Complementamos tu hogar"</p>
+              <!-- Introduction text. -->
+              <p class="home_h2 white_text introduction_text">Introducción introducción introducción introducción introducción introducción introducción<br>Introducción introducción introducción introducción introducción introducción.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer. -->
+      <div class="land_footer">
+        <!-- Top of the footer. -->
+        <div class="land_footer_top">
+          <!-- Social networks logos container. -->
+          <div class="land_footer_top_content">
+            <!-- Facebook logo. -->
+            <img src="../images/facebook.png" class="facebook_logo">
+            <!-- Google Plus logo. -->
+            <img src="../images/googleplus.png" class="googleplus_logo">
+          </div>
+        </div>
+        <!-- Bottom of the footer. -->
+        <div class="land_footer_bottom">
+          <!-- Content of the bottom of the footer. -->
+          <div class="land_footer_bottom_content">
+            <!-- Rights reserved text. -->
+            <p class="home_h3 white_text rights_reserved_text">Todos los derechos reservados a Ohana Home</p>
+            <!-- Contact mail. -->
+            <p class="home_h3 white_text contact_mail">contacto@ohanahome.mx</p>
+            <!-- MOH footer logo. -->
+            <img class="moh_logo_footer" src="../images/MOH_logo_2.png"> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Libraries scripts. -->
+    <!-- JQuery -->
+    <script src="../libraries/jquery/jquery-2.1.4.js"></script>
+    <!-- Backstretch. -->
+    <script src="../libraries/backstretch/jquery.backstretch.min.js"></script>
+    <!-- Floatl. -->
+    <script src="../libraries/floatl-master/lib/js/floatl.global.js"></script>
+    <!-- Own scripts. -->
+    <script src="../scripts/land_page/land_page_jquery.js"></script>
   </body>
 </html>

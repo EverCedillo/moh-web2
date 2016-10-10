@@ -1,0 +1,77 @@
+/*Tablet styles.*/
+@media screen and (max-width: 1024px) {
+  /***** General styles. *****/
+  /*Texts.*/
+  /*H1.*/
+  .home_h1{
+    font-size: 30px !important;
+  }
+
+  /*H2.*/
+  .home_h2{
+    font-size: 14px !important;
+  }
+  /***** End of the general styles. *****/
+  
+  /***** Register section styles. *****/
+  #register_section{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .fit_full_screen{
+    min-height: 610px;
+  }
+  
+  .column_left{
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: calc(50vh - 75px);
+    min-height: 245px;
+    margin: 0px auto 0px auto;
+  }
+  
+  .column_left_flex{
+    align-items: flex-start;
+    height: calc(50vh - 75px);
+    min-height: 235px;
+  }
+  
+  .invitation_to_register_text{
+    margin-top: 20px;
+  }
+  
+  .column_right{
+    display: block;
+    width: 100%;
+    max-width: 540px;
+    height: calc(50vh - 35px);
+    min-height: 305px;
+    margin: 0px auto 0px auto;
+    float: none;
+  }
+  
+  .column_right_flex{
+    align-items: flex-end;
+    height: calc(50vh - 35px);
+    min-height: 305px;
+  }
+  
+  .column_right_content{
+    text-align: center;
+  }
+  
+  .logo_img{
+    width: 250px;
+    height: 140px;
+  }
+  /***** End of the register section styles. *****/
+  
+  /***** Footer section styles. *****/
+  .land_footer_bottom_content{
+    width: 94.1406%;
+    max-width: 964px;
+  }
+  /***** End of the footer section styles. *****/
+}

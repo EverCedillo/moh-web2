@@ -1,0 +1,251 @@
+/*Desktop styles..*/
+/***** General styles. *****/
+/*Fit the space left by the header.*/
+.view_content{
+  width: 100%;
+  height: calc(100vh - 70px);
+  margin-top: 70px;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/*Texts.*/
+/*White texts.*/
+.white_text{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #FFFFFF;
+}
+
+/*Gray texts.*/
+.gray_text{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #999999;
+}
+
+/*H1.*/
+.home_h1{
+  font-size: 40px !important;
+  font-weight: 700;
+}
+
+/*H2.*/
+.home_h2{
+  font-size: 16px !important;
+  font-weight: 400;
+}
+
+/*H3.*/
+.home_h3{
+  font-size: 14px !important;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+/*H4.*/
+.home_h4{
+  font-size: 10px !important;
+  font-weight: 400;
+}
+/***** End of the general styles. *****/
+
+/***** Header styles. *****/
+/*Header.*/
+.header_with_icon{
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: #93268E;
+  top: 0;
+  z-index: 99;
+}
+
+/*Content of the head.*/
+.header_content{
+  display: inline-block;
+  height: 70px;
+}
+
+.header_logo{
+  width: 55px;
+  height: 55px;
+  margin-top: 7.5px;
+}
+/***** End of the header styles. *****/
+
+/***** Principal content styles. *****/
+#contact_section{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 70px);
+  min-height: 490px;
+}
+
+.principal_column{
+  display: inline-block;
+  height: calc(100vh - 70px);
+  min-height: 490px;
+}
+
+.principal_column_flex{
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 70px);
+  min-height: 490px;
+}
+
+.principal_column_content{
+  text-align: center;
+  height: 460px;
+}
+
+.invitation_to_contact{
+  margin: 20px auto 0px auto;
+  line-height: 1;
+}
+
+/*This aren't the inputs, this are divs that contains the inputs.*/
+.input_register{
+  width: 100%;
+  max-width: 300px;
+  height: 40px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #FFFFFF;
+  margin: auto auto 0px auto;
+}
+
+.name_input{
+ margin-top: 20px; 
+}
+
+.mail_input{
+  margin-top: 10px;
+}
+
+.commentary_input{
+  margin-top: 10px;
+  height: 90px;
+}
+
+.send_button{
+  width: 100%;
+  max-width: 300px;
+  height: 40px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #19E3F2;
+  cursor: pointer;
+}
+
+/*Overwrite the floatl styles.*/
+.floatl__label{
+  padding: 0px;
+  margin: 0px;
+  top: 6px;
+  left: 6px;
+}
+
+.floatl--active .floatl__label{
+  top: 6px;
+}
+
+input.floatl__input{
+  height: 20px;
+  width: 95%;
+}
+
+.floatl__input{
+  font-size: 10px;
+  padding: 11px 0px 5px 6px;
+  border: none;
+}
+
+.floatl--active .floatl__input{
+  padding: 16px 0px 0px 6px;
+  width: 95%;
+}
+
+textarea {
+    resize: none;
+}
+
+.textarea_commentary{
+  width: 95%;
+  height: 70px;
+}
+/***** End of the principal content styles. *****/
+
+/***** Footer section styles. *****/
+.contact_footer{
+  width: 100%;
+  height: 160px;
+  background-color: #757575;
+}
+
+.contact_footer_top{
+  width: 100%;
+  height: 90px;
+}
+
+.contact_footer_top_content{
+  width: 160px;
+  height: 90px;
+  margin: 0px auto 0px auto;
+}
+
+.facebook_logo{
+  float: left;
+  margin: 20px auto 0px 15px;
+}
+
+.googleplus_logo{
+  float: right;
+  margin: 20px 15px 0px auto;
+}
+
+.contact_footer_bottom{
+  width: 100%;
+  height: 70px;
+}
+
+.contact_footer_bottom_content{
+  position: relative;
+  width: 95.1683%;
+  max-width: 1300px;
+  height: 70px;
+  margin: 0px auto 0px auto;
+  border-top: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.rights_reserved_text{
+  position: absolute;
+  margin: 0px;
+  left: 0px;
+  top: 20px;
+}
+
+.contact_mail{
+  position: absolute;
+  margin: 0px;
+  right: 0px;
+  top: 20px;
+}
+
+.moh_logo_footer{
+  display: block;
+  width: 70px;
+  height: 40px;
+  margin: 20px auto 0px auto;
+}
+/***** End of the footer section styles. *****/
